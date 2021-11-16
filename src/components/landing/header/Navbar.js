@@ -28,28 +28,27 @@ const Navbar = () => {
     // console.log("ethBalance", ethBalance/ 10 ** 18)
     const balance = (ethBalance / 10 ** 18).toFixed(5);
     // setUserBalance(balance);
-
-    const connectMetaMask = async () => {
-        try {
-            localStorage.setItem('injected', "injected")
-            if (account) {
-                logout()
-            } else {
-                login("injected");
-            }
-        } catch (e) {
-            console.log(e)
-        }
-    }
-    // console.log("account", account);
-    const walletConnect = async () => {
-        localStorage.setItem('walletconnect', "walletconnect")
+    const connectwallet = () => {
+        window.$("#exampleModal").modal('show');
+      }
+      const connectMetamask = () => {
+        alert(account)
+        localStorage.setItem("connectorId", "injected")
         if (account) {
-            logout()
+          logout()
         } else {
-            login("walletconnect");
+          login("injected")
         }
-    }
+      }
+    
+      const trustWallet = async () => {
+        localStorage.setItem("connectorId", "walletconnect")
+        if (account) {
+          logout()
+        } else {
+          login("walletconnect")
+        }
+      }
     const FormaticWallet = () => {
         localStorage.setItem('formatic', "formatic")
         if (account) {
@@ -82,7 +81,7 @@ const Navbar = () => {
                     <div className="row">
                         <div className="col-sm-11 m-auto">
                             <nav className="navbar ptb20 navbar-expand-xl">
-                                
+
                                 <NavLink to="/" className="navbar-brand">
                                     <img src="\roobin\logo.png" alt="" className="img-fluid" />
                                 </NavLink>
@@ -91,13 +90,13 @@ const Navbar = () => {
                                 </button>
                                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                     <div className="search-in">
-                                    <form className="form-inline my-2 my-lg-0">
-                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+                                        <form className="form-inline my-2 my-lg-0">
+                                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
 
-                                    </form>
-                                    <div className="icons-search">
-                                    <i class="fas fa-search"></i>
-                                    </div>
+                                        </form>
+                                        <div className="icons-search">
+                                            <i class="fas fa-search"></i>
+                                        </div>
                                     </div>
                                     <ul className="navbar-nav ml-auto">
 
@@ -110,7 +109,7 @@ const Navbar = () => {
                                         <li className="nav-item">
                                             <Link className="nav-link" to="/Nftswap">Activity</Link>
                                         </li>
-                                       
+
                                         <li className="nav-item">
                                             <Link to="/profile" className="nav-link" >Pages</Link>
                                         </li>
@@ -118,10 +117,60 @@ const Navbar = () => {
                                             <a className="nav-link" href="#">Contact</a>
                                         </li>
                                         <li>
-                                        <button className="buttonssre">CONNECT WALLET</button>
+                                            <button className="buttonssre" >CONNECT WALLET</button>
                                         </li>
                                     </ul>
-                                   
+                                    <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div className="modal-dialog" role="document">
+                                            <div className="modal-content">
+                                                <div className="modal-body">
+                                                    <div className="row">
+                                                        <div className="col-sm-12 text-center">
+                                                            <div className="inner-side">
+                                                                <h3 style={{ color: "#fff" }}>Connect Wallet</h3>
+                                                                {/* <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat nisi voluptatum adipisci veritatis amet,</p> */}
+                                                            </div>
+                                                            <div className="row">
+                                                                <div className="col-sm-6">
+                                                                    <button className="inner-wallet" data-dismiss="modal">
+                                                                        <ul className="list-inline">
+                                                                            <li className="list-inline-item">
+                                                                                <div className="inner-wrapper">
+                                                                                </div>
+                                                                            </li>
+                                                                            <li className="list-inline-item">
+                                                                                <div className="inner-wrapper">
+                                                                                    <button className="btn" onClick={connectMetamask} type="button">MetaMask </button>
+                                                                                </div>
+                                                                            </li>
+
+
+                                                                        </ul>
+                                                                    </button>
+                                                                </div>
+                                                                <div className="col-sm-6">
+                                                                    <button className="inner-wallet" data-dismiss="modal">
+                                                                        <ul className="list-inline">
+                                                                            <li className="list-inline-item">
+                                                                                <div className="inner-wrapper">
+                                                                                    <img src="\Rtt\wallet-connect.png" alt="" className="img-fluid" />
+                                                                                </div>
+                                                                            </li>
+                                                                            <li className="list-inline-item">
+                                                                                <div className="inner-wrapper">
+                                                                                    <button className="btn" type="button" onClick={trustWallet}>WalletConnect</button>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </nav>
                         </div>

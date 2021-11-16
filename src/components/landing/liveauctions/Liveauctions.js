@@ -70,7 +70,7 @@ const LiveAucations = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-6 col-lg-8 main-image-ss">
+                        <div className="col-xl-8 col-lg-8 main-image-ss">
                             <div className="image-back-main text-center">
                                 {/* <img src="\roobin\background-new.png" alt="" className="img-fluid img-sddf" /> */}
                                 {/* <h4>THE BEST PLACE TO COLLECT BUY<br></br>AND SELL <span>AWESOME NFT</span></h4> */}

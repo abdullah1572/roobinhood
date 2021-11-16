@@ -112,7 +112,7 @@ const Navbar = () => {
                                         </li>
                                        
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#">Pages</a>
+                                            <Link to="/profile" className="nav-link" >Pages</Link>
                                         </li>
                                         <li className="nav-item">
                                             <a className="nav-link" href="#">Contact</a>

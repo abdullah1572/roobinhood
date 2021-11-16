@@ -24,7 +24,7 @@ const LiveAucations = () => {
                                       <img src="\roobin\icon2.png" alt="" className=" img-sddf" />
                                     </div>
                                     <div className="buttonss">
-                                        <button>Marketplace</button>
+                                        <Link to="/collection"><button>Marketplace</button></Link>
                                     </div>
                                 </div>
                                 <div className="ff">

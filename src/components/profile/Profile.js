@@ -9,22 +9,12 @@ const Profile = () => {
     return (
         <>
             <div className="profile-mains">
-            <Navbar />
+                <Navbar />
                 <section className="profiles-back">
                     <div className="container profiless">
                         <div className="action-button">
-                            {/* <button type="button" className="act-but"></button> */}
-                            <ul className="list-inline">
-                                {/* <li className="list-inline-item">
-                                    <div class="form-group">
-                                        <label for="exampleFormControlFile1" className="act-but">Edit cover photo <img src="\bluemoon-nft\profiles\profile-1.png" alt="" className="img-fluid" /></label>
-                                        <input type="file" class="form-control-file d-none" id="exampleFormControlFile1" />
-                                    </div>
-                                </li> */}
-                                {/* <li className="list-inline-item">
-                                    <Link to={`/editprofile/${walletAddress}`}><button type="button" className="act-but">Edit profile<img src="\bluemoon-nft\profiles\profile-2.png" alt="" className="img-fluid" /></button></Link>
-                                </li> */}
-                            </ul>
+                         
+                            <h3>Create New Item</h3>
                         </div>
                     </div>
                 </section>
@@ -35,36 +25,48 @@ const Profile = () => {
                                 <div className="row">
                                     <div className="col-xl-3 col-lg-4 col-md-12 col-12 main-profile-pad">
                                         <div className="side-profilessss">
+                                            <div className="upperimage-nff">
+                                                <img alt="" src="\roobin\our-team-background.png" className="img-fluid " />
+                                            </div>
                                             <div className="main-image-d text-center">
-                                                {/* <img alt="" src={userDetail?.ipfsImageUrl} className="img-fluid side-pf-img" /> */}
-                                                <h2>svdshdbwhehsbxb23ebwebs..</h2>
-                                                <h6>sdhds7373cshcv...
-                                                    
-                                                        <button><img alt="" src="\bluemoon-nft\profiles\blue-cir.png" className="img-fluid" /></button>
-                                                 
-                                                </h6>
-                                                <p>dsdcdcdcdcdc</p>
-                                               
-                                                    <a target="_blank" href="#"className="linkkks"><img alt="" src="\bluemoon-nft\profiles\earth1.png" className="img-fluid " />sds</a>
-                                                <div className="followw">
-                                                    <button className="fllow" type="button" >Follow</button> 
+                                                <img alt="" src="\roobin\icon2.png" className="img-fluid side-pf-img" />
+                                                <h2>Morgan Weight</h2>
+                                                <h4>Creative NFT Designer</h4>
+                                                <p>
+                                                    Lorem ipsum dolor Pellentesque faucibus at dui vel semper. Maecenas eleifend .
+                                                </p>
+                                                <div className="cop-clipss">
+                                                    <h5>sdhds7373cshcv...</h5>
+                                                    <button><i class="fas fa-copy"></i></button>
+                                                </div>
+                                                {/* <p>dsdcdcdcdcdc</p> */}
 
-                                                    {/* <button className="fllow" type="button" >UnFollow</button> */}
-                                                    <button className="uplode" type="button"><img alt="" src="\bluemoon-nft\profiles\follow-next-1.png" className="" /></button>
-                                                    <button className="uplode" type="button"><img alt="" src="\bluemoon-nft\profiles\follow-next-2.png" className="" /></button>
-                                                </div>
                                                 <div className="socialss">
-                                                
-                                                        <a href="#" target="_blank"><img alt="" src="\bluemoon-nft\profiles\tiwitters.png" className="img-fluid " /></a>
-                                                    {/* <a className="link-main-oad"><img alt="" src="\bluemoon-nft\profiles\instaa.png" className="img-fluid " /></a> */}
-                                                    {/* <a><img alt="" src="\bluemoon-nft\profiles\facebooks.png" className="img-fluid " /></a> */}
+                                                    <div className="mnmn">
+                                                        <a><i class="fab fa-facebook-f"></i></a>
+                                                    </div>
+                                                    <div className="mnmn">
+                                                        <a><i class="fab fa-twitter"></i></a>
+                                                    </div>
+                                                    <div className="mnmn">
+                                                        <a><i class="fab fa-google-plus-g"></i></a>
+                                                    </div>
+                                                    <div className="mnmn">
+                                                        <a><i class="fab fa-linkedin-in"></i></a>
+                                                    </div>
+                                                    <div className="mnmn">
+                                                        <a><i class="fab fa-instagram"></i></a>
+                                                    </div>
                                                 </div>
-                                                <h4>Member since Mar 15, 2021</h4>
+                                                <div className="followw">
+                                                    <button className="fllow" type="button" >Follow</button>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
                                     <div className="col-xl-9 col-lg-8 col-md-12  col-12  main-paddss">
-                                        <div className="right-profile-slider">
+                                        {/* <div className="right-profile-slider">
                                             <div className="row">
                                                 <div className="col-"></div>
                                             </div>
@@ -131,6 +133,66 @@ const Profile = () => {
                                                 </div>
                                             </div>
                                         </div>
+                                    */}
+                                        <div className="right-side-mbn">
+                                            <h4>Create New Item</h4>
+                                            <h5>Create Item</h5>
+
+                                            <div className="upload-item">
+                                                <h5>Upload Item File</h5>
+                                                <div className="outer-items">
+                                                    <p>PNG, GIF, WEBP, MP4 or MP3. Max 100mb</p>
+                                                    <label className="buttonsdi" for="filess">Upload File</label>
+                                                    <input type="file" id="filess" className="d-none"></input>
+                                                </div>
+
+                                            </div>
+
+                                            <div className="form-mnb">
+
+                                                <div class="form-group">
+
+                                                    <input type="text" class="form-control" placeholder="Item name" id="exampleitemname" aria-describedby="emailHelp" />
+                                                </div>
+                                                <div className="choosecat">
+                                                    <h6>Choose Item Category</h6>
+                                                    <div className="outer-choose">
+                                                        <button><i class="fas fa-list-ul"></i>Art</button>
+                                                        <button><i class="fas fa-camera-retro"></i>Photography</button>
+                                                        <button><i class="fas fa-futbol"></i>Sports</button>
+                                                        <button><i class="far fa-image"></i>Painting</button>
+                                                        <button><i class="far fa-heart"></i>Collectibles</button>
+                                                        <button><i class="fas fa-exchange-alt"></i>Gifts</button>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mt-4 mb-5">
+                                                    <label>Item Description</label>
+                                                    <textarea type="text" class="form-control" id="exampleitemname" aria-describedby="emailHelp" />
+                                                </div>
+                                                <div class="form-group">
+
+                                                    <input type="text" class="form-control" placeholder="Item Price in ETH" id="exampleitemname" aria-describedby="emailHelp" />
+                                                </div>
+                                                <div className="row">
+                                                    <div className="col-md-6 col-12 pl-md-0">
+                                                        <div class="form-group">
+
+                                                            <input type="text" class="form-control" placeholder="Royalties" id="exampleitemname" aria-describedby="emailHelp" />
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-md-6 col-12 pr-md-0">
+                                                        <div class="form-group">
+
+                                                            <input type="text" class="form-control" placeholder="Size" id="exampleitemname" aria-describedby="emailHelp" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+
+                                                    <input type="text" class="form-control" id="exampleitemname" placeholder="Number of copies" aria-describedby="emailHelp" />
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -138,6 +200,7 @@ const Profile = () => {
                     </div>
                 </section>
             </div>
+       
         </>
     )
 }

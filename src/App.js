@@ -39,8 +39,9 @@ function App() {
           {/* {account &&
             <Route exact path='/createnft' component={CreateNft} />
           } */}
-          <Route exact path='/createitem' component={CreateItem} />
+          {/* <Route exact path='/createitem' component={CreateItem} /> */}
           <Route exact path='/profile' component={Profile} />
+          <Route exact path='/collection' component={CreateItem} />
           {/* <Route exact path='/liveauctions' component={LiveAuctions} />
           <Route exact path='/buynow' component={BuyNow} />
           <Route exact path='/sellerleaderboard' component={SellerLeaderBoard} />

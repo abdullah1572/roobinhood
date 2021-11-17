@@ -11,11 +11,11 @@ const Footer = () => {
                                 <div className="row">
                                     <div className="col-sm-4 text-white">
                                         <div className="left-side-fot">
-                                            <h4>Roobin Hood</h4>
+                                            {/* <h4>Roobin Hood</h4>
                                             <p>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing  elit. Pellentesque aliquam diam non dui dignissim pulvinar.
                                             Lorem ipsum dolor sit amet, consectetur adipiscing  elit. 
-                                            </p>
+                                            </p> */}
                                             <div className="socials">
                                                 <div className="mm">
                                                 <i class="fab fa-instagram"></i>
@@ -35,12 +35,12 @@ const Footer = () => {
                                     <div className="col-sm-4 text-white">
                                         <div className="mid-m-fot">
                                         <a className="" href="#">
-                                        <img src="\roobin\logo-fot.png" className="img-fluid" />
+                                        <img src="\roobin\logo-fot.png" className="img-fluid img-mdnh" />
                                     </a>
                                         </div>
                                     </div>
                                     <div className="col-sm-4 text-white">
-                                        <div className="right-side-fot">
+                                        {/* <div className="right-side-fot">
                                             <ul className="abb">
                                                 <h4>About</h4>
                                                 <li><a href="#">History</a></li>
@@ -63,7 +63,7 @@ const Footer = () => {
                                                 <li><a href="#">Help</a></li>
                                                 <li><a href="#">Privacy</a></li>
                                             </ul>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>

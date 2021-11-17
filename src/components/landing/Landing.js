@@ -3,13 +3,13 @@ import '../../App.scss';
 // import Bluemoon from './bluemoon/Bluemoon.js';
 // import OwlCarousel from 'react-owl-carousel';
 import LiveAucations from './liveauctions/Liveauctions';
-import Navbar from '../landing/header/Navbar.js';
+// import Navbar from '../landing/header/Navbar.js';
 
 
 function Landing() {
   return (
     <>
-    <Navbar/>  
+    {/* <Navbar/>   */}
       <LiveAucations/>
      
     </>

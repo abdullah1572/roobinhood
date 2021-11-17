@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './createitem.scss';
-import Navbar from '../landing/header/Navbar.js';
+// import Navbar from '../landing/header/Navbar.js';
 const CreateItem = () => {
     return (
         <>
             <div className="profile-mainss">
-                <Navbar />
+                {/* <Navbar /> */}
                 <section className="profiles-back">
                     <div className="container profiless">
                         <div className="action-button">
@@ -183,6 +183,7 @@ const CreateItem = () => {
 
                                             </div>
                                         </div>
+                                        
                                         <div className="col-lg-3">
                                             <div className="ITEM-CARD">
                                                 <div className="upper-div-imgss">

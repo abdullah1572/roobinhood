@@ -32,13 +32,14 @@ const Navbar = () => {
         window.$("#exampleModal").modal('show');
       }
       const connectMetamask = () => {
-        alert(account)
+      
         localStorage.setItem("connectorId", "injected")
         if (account) {
           logout()
         } else {
           login("injected")
         }
+        window.$("#exampleModal").modal('hide');
       }
     
       const trustWallet = async () => {
@@ -48,15 +49,16 @@ const Navbar = () => {
         } else {
           login("walletconnect")
         }
+        window.$("#exampleModal").modal('hide');
       }
-    const FormaticWallet = () => {
-        localStorage.setItem('formatic', "formatic")
-        if (account) {
-            logout()
-        } else {
-            activate(connectorsByName.Fortmatic)
-        }
-    }
+    // const FormaticWallet = () => {
+    //     localStorage.setItem('formatic', "formatic")
+    //     if (account) {
+    //         logout()
+    //     } else {
+    //         activate(connectorsByName.Fortmatic)
+    //     }
+    // }
     const UserSignWindow = async () => {
 
         const tx = await userSign()
@@ -72,7 +74,9 @@ const Navbar = () => {
         }
     }
 
-
+    const disconnectWallet=()=>{
+        logout(); 
+    }
     return (
         <>
 
@@ -117,7 +121,7 @@ const Navbar = () => {
                                             <a className="nav-link" href="#">Contact</a>
                                         </li>
                                         <li>
-                                            <button className="buttonssre" onClick={connectwallet} >CONNECT WALLET</button>
+                                      {account?  <button className="buttonssre" onClick={disconnectWallet} >Disconnect</button> :   <button className="buttonssre" onClick={connectwallet} >CONNECT WALLET</button>}
                                         </li>
                                     </ul>
                                     <div className="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
